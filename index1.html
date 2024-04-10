@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function loadDoc() {
+          const xhttp = new XMLHttpRequest();
+          xhttp.onload = function() {
+            document.getElementById("demo").innerHTML = this.responseText;
+          }
+          xhttp.open("GET", "C:\Users\navinderjit.kahlon\OneDrive - triOS College\Downloads\Daily Class Activity - Day 05\hello.html");
+          xhttp.send();
+        }
+        </script>
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" id="but" onclick="loadDoc()">Change Content</button>
+</div>
+ 
+
+ 
+</body>
+</html>
